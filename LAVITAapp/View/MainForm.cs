@@ -1,6 +1,7 @@
 ﻿using LAVITAapp.Models;
 using LAVITAapp.View.QuanLyKhachHang;
 using LAVITAapp.View.QuanLyTaiKhoan;
+using LAVITAapp.View.ThongTin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,6 +50,16 @@ namespace LAVITAapp.View
         private void btnqltk_Click(object sender, EventArgs e)
         {
             ShowUserControl(new UC_QuanLyTaiKhoan());
+        }
+
+        private void btnthongtin_Click(object sender, EventArgs e)
+        {
+            ShowUserControl(new UC_ThongTin(this, tk));
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

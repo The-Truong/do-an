@@ -119,6 +119,7 @@
             guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2ControlBox1.Size = new Size(57, 67);
             guna2ControlBox1.TabIndex = 0;
+            guna2ControlBox1.Click += guna2ControlBox1_Click;
             // 
             // guna2HtmlLabel1
             // 
@@ -177,6 +178,7 @@
             btnthongtin.Text = "Thông Tin";
             btnthongtin.TextAlign = HorizontalAlignment.Left;
             btnthongtin.UseTransparentBackground = true;
+            btnthongtin.Click += btnthongtin_Click;
             // 
             // btngiaohang
             // 
