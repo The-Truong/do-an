@@ -68,9 +68,6 @@
             guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             dgvkhachhang = new Guna.UI2.WinForms.Guna2DataGridView();
             guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
-            labeltindung = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            labelthue = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            labeldienthoai = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtthue = new Guna.UI2.WinForms.Guna2TextBox();
             txttindung = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -90,6 +87,9 @@
             btsua = new Guna.UI2.WinForms.Guna2Button();
             btthem = new Guna.UI2.WinForms.Guna2Button();
             btlammoi = new Guna.UI2.WinForms.Guna2Button();
+            guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvkhachhang).BeginInit();
             guna2GroupBox2.SuspendLayout();
@@ -201,9 +201,9 @@
             // 
             guna2GroupBox2.BorderColor = Color.MidnightBlue;
             guna2GroupBox2.BorderRadius = 8;
-            guna2GroupBox2.Controls.Add(labeltindung);
-            guna2GroupBox2.Controls.Add(labelthue);
-            guna2GroupBox2.Controls.Add(labeldienthoai);
+            guna2GroupBox2.Controls.Add(guna2HtmlLabel10);
+            guna2GroupBox2.Controls.Add(guna2HtmlLabel9);
+            guna2GroupBox2.Controls.Add(guna2HtmlLabel8);
             guna2GroupBox2.Controls.Add(txtthue);
             guna2GroupBox2.Controls.Add(txttindung);
             guna2GroupBox2.Controls.Add(guna2HtmlLabel6);
@@ -229,39 +229,6 @@
             guna2GroupBox2.Size = new Size(1024, 424);
             guna2GroupBox2.TabIndex = 19;
             guna2GroupBox2.Text = "Thông tin khách hàng";
-            // 
-            // labeltindung
-            // 
-            labeltindung.BackColor = Color.Transparent;
-            labeltindung.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            labeltindung.ForeColor = Color.MidnightBlue;
-            labeltindung.Location = new Point(538, 366);
-            labeltindung.Name = "labeltindung";
-            labeltindung.Size = new Size(77, 25);
-            labeltindung.TabIndex = 49;
-            labeltindung.Text = "Tín Dụng";
-            // 
-            // labelthue
-            // 
-            labelthue.BackColor = Color.Transparent;
-            labelthue.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            labelthue.ForeColor = Color.MidnightBlue;
-            labelthue.Location = new Point(538, 288);
-            labelthue.Name = "labelthue";
-            labelthue.Size = new Size(72, 25);
-            labelthue.TabIndex = 48;
-            labelthue.Text = "Mã Thuế";
-            // 
-            // labeldienthoai
-            // 
-            labeldienthoai.BackColor = Color.Transparent;
-            labeldienthoai.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            labeldienthoai.ForeColor = Color.MidnightBlue;
-            labeldienthoai.Location = new Point(538, 210);
-            labeldienthoai.Name = "labeldienthoai";
-            labeldienthoai.Size = new Size(114, 25);
-            labeldienthoai.TabIndex = 47;
-            labeldienthoai.Text = "Số Điện Thoại";
             // 
             // txtthue
             // 
@@ -316,9 +283,9 @@
             guna2HtmlLabel6.ForeColor = Color.MidnightBlue;
             guna2HtmlLabel6.Location = new Point(537, 131);
             guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            guna2HtmlLabel6.Size = new Size(87, 25);
+            guna2HtmlLabel6.Size = new Size(88, 25);
             guna2HtmlLabel6.TabIndex = 46;
-            guna2HtmlLabel6.Text = "Thành Phố";
+            guna2HtmlLabel6.Text = "Thành phố";
             // 
             // txtdienthoai
             // 
@@ -449,9 +416,9 @@
             guna2HtmlLabel5.ForeColor = Color.MidnightBlue;
             guna2HtmlLabel5.Location = new Point(42, 365);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(116, 25);
+            guna2HtmlLabel5.Size = new Size(113, 25);
             guna2HtmlLabel5.TabIndex = 39;
-            guna2HtmlLabel5.Text = "Mã Bưu Chính";
+            guna2HtmlLabel5.Text = "Mã bưu chính";
             // 
             // txtcancuoc
             // 
@@ -506,9 +473,9 @@
             guna2HtmlLabel4.ForeColor = Color.MidnightBlue;
             guna2HtmlLabel4.Location = new Point(42, 287);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(61, 25);
+            guna2HtmlLabel4.Size = new Size(58, 25);
             guna2HtmlLabel4.TabIndex = 34;
-            guna2HtmlLabel4.Text = "Địa Chỉ";
+            guna2HtmlLabel4.Text = "Địa chỉ";
             // 
             // guna2HtmlLabel3
             // 
@@ -528,9 +495,9 @@
             guna2HtmlLabel2.ForeColor = Color.MidnightBlue;
             guna2HtmlLabel2.Location = new Point(42, 131);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(60, 25);
+            guna2HtmlLabel2.Size = new Size(57, 25);
             guna2HtmlLabel2.TabIndex = 32;
-            guna2HtmlLabel2.Text = "Họ Tên";
+            guna2HtmlLabel2.Text = "Họ tên";
             // 
             // btxoa
             // 
@@ -621,6 +588,36 @@
             btlammoi.Text = "Làm Mới";
             btlammoi.Click += btlammoi_Click;
             // 
+            // guna2HtmlLabel8
+            // 
+            guna2HtmlLabel8.BackColor = Color.Transparent;
+            guna2HtmlLabel8.ForeColor = Color.MidnightBlue;
+            guna2HtmlLabel8.Location = new Point(537, 209);
+            guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            guna2HtmlLabel8.Size = new Size(104, 23);
+            guna2HtmlLabel8.TabIndex = 50;
+            guna2HtmlLabel8.Text = "Số điện thoại";
+            // 
+            // guna2HtmlLabel9
+            // 
+            guna2HtmlLabel9.BackColor = Color.Transparent;
+            guna2HtmlLabel9.ForeColor = Color.MidnightBlue;
+            guna2HtmlLabel9.Location = new Point(537, 287);
+            guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            guna2HtmlLabel9.Size = new Size(66, 23);
+            guna2HtmlLabel9.TabIndex = 51;
+            guna2HtmlLabel9.Text = "Mã thuế";
+            // 
+            // guna2HtmlLabel10
+            // 
+            guna2HtmlLabel10.BackColor = Color.Transparent;
+            guna2HtmlLabel10.ForeColor = Color.MidnightBlue;
+            guna2HtmlLabel10.Location = new Point(537, 365);
+            guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            guna2HtmlLabel10.Size = new Size(71, 23);
+            guna2HtmlLabel10.TabIndex = 52;
+            guna2HtmlLabel10.Text = "Tín dụng";
+            // 
             // UC_QuanLyKhachHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -661,9 +658,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labeltindung;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelthue;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labeldienthoai;
         private Guna.UI2.WinForms.Guna2TextBox txtthue;
         private Guna.UI2.WinForms.Guna2TextBox txttindung;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
@@ -674,5 +668,8 @@
         private Guna.UI2.WinForms.Guna2Button btsua;
         private Guna.UI2.WinForms.Guna2Button btthem;
         private Guna.UI2.WinForms.Guna2Button btlammoi;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
     }
 }

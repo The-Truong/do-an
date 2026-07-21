@@ -1,5 +1,6 @@
 ﻿using LAVITAapp.Models;
 using LAVITAapp.View.QuanLyKhachHang;
+using LAVITAapp.View.QuanLyTaiKhoan;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +28,7 @@ namespace LAVITAapp.View
             InitializeComponent();
             tk = _tk;
             //quản lý tài khoản
-            if (!tk.Quyen.Equals("admin"))
+            if (!tk.Quyen.Equals("Admin"))
             {
                 btnqltk.Visible = false;
             }
@@ -43,6 +44,11 @@ namespace LAVITAapp.View
         private void btnhskh_Click(object sender, EventArgs e)
         {
             ShowUserControl(new UC_QuanLyKhachHang());
+        }
+
+        private void btnqltk_Click(object sender, EventArgs e)
+        {
+            ShowUserControl(new UC_QuanLyTaiKhoan());
         }
     }
 }

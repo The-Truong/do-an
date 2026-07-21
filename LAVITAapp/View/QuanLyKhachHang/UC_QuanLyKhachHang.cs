@@ -23,12 +23,10 @@ namespace LAVITAapp.View.QuanLyKhachHang
         private void UC_QuanLyKhachHang_Load(object sender, EventArgs e)
         {
             loadData();
-            MessageBox.Show("Helo");
         }
 
         void loadData()
         {
-            MessageBox.Show("helo2");
             dgvkhachhang.DataSource = db.KhachHangs.ToList();
             dgvkhachhang.Columns["KiemSoatVien"].Visible = false;
             guna2ComboBox1.DataSource = db.Set<NhanVien>()
@@ -46,7 +44,6 @@ namespace LAVITAapp.View.QuanLyKhachHang
             dgvkhachhang.Columns[3].Width = 250;
             dgvkhachhang.Columns[4].Width = 150;
             dgvkhachhang.Columns[5].Width = 150;
-            MessageBox.Show("helo3");
         }
         void ClearForm()
         {
@@ -55,9 +52,9 @@ namespace LAVITAapp.View.QuanLyKhachHang
             txtdiachi.Text = "";
             txtbuuchinh.Text = "";
             txtthanhpho.Text = "";
-            labeldienthoai.Text = "";
-            labelthue.Text = "";
-            labeltindung.Text = "";
+            txtdienthoai.Text = "";
+            txtthue.Text = "";
+            txttindung.Text = "";
         }
 
         private void btlammoi_Click(object sender, EventArgs e)
@@ -69,6 +66,7 @@ namespace LAVITAapp.View.QuanLyKhachHang
         private void btthem_Click(object sender, EventArgs e)
         {
             new Form_ThemKhachHang().ShowDialog();
+            loadData();
         }
 
         private void btsua_Click(object sender, EventArgs e)
@@ -161,7 +159,7 @@ namespace LAVITAapp.View.QuanLyKhachHang
 
                 if (dgvkhachhang.SelectedRows.Count == 0)
                 {
-                    MessageBox.Show("Vui lòng chọn một khách hàng để sửa.");
+                    MessageBox.Show("Vui lòng chọn một khách hàng để xóa.");
                     return;
                 }
 

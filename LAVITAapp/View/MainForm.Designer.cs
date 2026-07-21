@@ -340,6 +340,7 @@
             btnqltk.Text = "Quản Lý Tài Khoản";
             btnqltk.TextAlign = HorizontalAlignment.Left;
             btnqltk.UseTransparentBackground = true;
+            btnqltk.Click += btnqltk_Click;
             // 
             // guna2PictureBox1
             // 
