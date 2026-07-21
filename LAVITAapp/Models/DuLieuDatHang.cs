@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -10,20 +11,17 @@ namespace LAVITAapp.Models
     public class DuLieuDatHang
     {
         [Key]
-        public string Ma { get; set; }
+        [DisplayName("Mã")]
+        public int Ma { get; set; }
+        [DisplayName("Mã Đơn Hàng")]
+        public int MaDonHang { get; set; }
+        [DisplayName("Mã Hàng")]
+        public int MaHang { get; set; }
+        [DisplayName("Số Lượng")]
         public int SoLuong { get; set; }
+        [DisplayName("Đơn Giá")]
         public double DonGia { get; set; }
-        public bool TrangThai { get; set; }
-        public string? MoTa { get; set; }
-        //public string MaHang { get; set; }
-        //public string TenHang { get; set; }
-        //public int SoLuong { get; set; }
-        //public double DonGia { get; set; }
-        [Required]
-        public string MaHang { get; set; }
         public Hang? Hang { get; set; }
-        [Required]
-        public string MaDonHang { get; set; }
         public DonHang? DonHang { get; set; }
 
     }
