@@ -36,11 +36,11 @@ namespace LAVITAapp.Data
                 new NhanVien { Ma = 5, HoTen = "Vo Thi Mai", Luong = 13000000, MaPhong = "PGH", TenPhong = "Phong Giao Hang", ChucVu = "NhanVienGiaoHang" }
                 );
             modelBuilder.Entity<Hang>().HasData(
-                new Hang { Ma = "H001", TenHang = "Laptop Dell Inspiron", MoTa = "Core i5 RAM 16GB", LoaiHang = "Laptop", SoLuongTon = 40, DonGia = 18500000 },
-                new Hang { Ma = "H002", TenHang = "Chuot Logitech M331", MoTa = "Khong day", LoaiHang = "Phu Kien", SoLuongTon = 120, DonGia = 350000 },
-                new Hang { Ma = "H003", TenHang = "Ban Phim Logitech K120", MoTa = "USB", LoaiHang = "Phu Kien", SoLuongTon = 90, DonGia = 250000 },
-                new Hang { Ma = "H004", TenHang = "Man Hinh LG 24 inch", MoTa = "Full HD IPS", LoaiHang = "Man Hinh", SoLuongTon = 35, DonGia = 3200000 },
-                new Hang { Ma = "H005", TenHang = "SSD Samsung 1TB", MoTa = "NVMe Gen4", LoaiHang = "Luu Tru", SoLuongTon = 55, DonGia = 2100000 }
+                new Hang { Ma = 1, TenHang = "Laptop Dell Inspiron", LoaiHang = "Laptop", SoLuongTon = 40, DonGia = 18500000 },
+                new Hang { Ma = 2, TenHang = "Chuot Logitech M331", LoaiHang = "Phu Kien", SoLuongTon = 120, DonGia = 350000 },
+                new Hang { Ma = 3, TenHang = "Ban Phim Logitech K120", LoaiHang = "Phu Kien", SoLuongTon = 90, DonGia = 250000 },
+                new Hang { Ma = 4, TenHang = "Man Hinh LG 24 inch", LoaiHang = "Man Hinh", SoLuongTon = 35, DonGia = 3200000 },
+                new Hang { Ma = 5, TenHang = "SSD Samsung 1TB", LoaiHang = "Luu Tru", SoLuongTon = 55, DonGia = 2100000 }
                 );
             modelBuilder.Entity<KhachHang>().HasData(
                 new KhachHang
@@ -88,79 +88,141 @@ namespace LAVITAapp.Data
             modelBuilder.Entity<DonHang>().HasData(
                 new DonHang
                 {
-                    Ma = "DH001",
-                    NgayDat = new DateTime(2026, 7, 10),
-                    NgayGiao = new DateTime(2026, 7, 15),
-                    MaKhach = "KH001"
+                    Ma = 1,
+                    NgayDat = new DateTime(2026, 7, 15),
+                    NgayGiao = new DateTime(2026, 7, 18),
+                    MaKhach = 1,
+                    TrangThai = "Đã duyệt",
+                    MoTa = "Đơn hàng thiết bị văn phòng"
                 },
                 new DonHang
                 {
-                    Ma = "DH002",
-                    NgayDat = new DateTime(2026, 7, 11),
-                    NgayGiao = new DateTime(2026, 7, 16),
-                    MaKhach = "KH002"
+                    Ma = 2,
+                    NgayDat = new DateTime(2026, 7, 17),
+                    NgayGiao = new DateTime(2026, 7, 21),
+                    MaKhach = 1,
+                    TrangThai = "Chờ duyệt",
+                    MoTa = "Đang kiểm tra tồn kho"
                 },
-
                 new DonHang
                 {
-                    Ma = "DH003",
-                    NgayDat = new DateTime(2026, 7, 12),
-                    NgayGiao = new DateTime(2026, 7, 17),
-                    MaKhach = "KH003"
+                    Ma = 3,
+                    NgayDat = new DateTime(2026, 7, 18),
+                    NgayGiao = new DateTime(2026, 7, 22),
+                    MaKhach = 2,
+                    TrangThai = "Đã giao",
+                    MoTa = "Đã giao đầy đủ"
+                },
+                new DonHang
+                {
+                    Ma = 4,
+                    NgayDat = new DateTime(2026, 7, 19),
+                    NgayGiao = new DateTime(2026, 7, 23),
+                    MaKhach = 2,
+                    TrangThai = "Hủy",
+                    MoTa = "Khách hủy đơn hàng"
+                },
+                new DonHang
+                {
+                    Ma = 5,
+                    NgayDat = new DateTime(2026, 7, 20),
+                    NgayGiao = new DateTime(2026, 7, 24),
+                    MaKhach = 3,
+                    TrangThai = "Đã duyệt",
+                    MoTa = "Khách hàng VIP"
+                },
+                new DonHang
+                {
+                    Ma = 6,
+                    NgayDat = new DateTime(2026, 7, 21),
+                    NgayGiao = new DateTime(2026, 7, 25),
+                    MaKhach = 3,
+                    TrangThai = "Đã giao",
+                    MoTa = "Đã xuất kho và giao thành công"
                 }
-                );
+            );
             modelBuilder.Entity<DuLieuDatHang>().HasData(
                 new DuLieuDatHang
                 {
-                    Ma = "CT001",
-                    MaDonHang = "DH001",
-                    MaHang = "H001",
+                    Ma = 1,
+                    MaDonHang = 1,
+                    MaHang = 1,
                     SoLuong = 2,
-                    DonGia = 18500000,
-                    TrangThai = true,
-                    MoTa = "Don hop le"
+                    DonGia = 18500000
                 },
                 new DuLieuDatHang
                 {
-                    Ma = "CT002",
-                    MaDonHang = "DH001",
-                    MaHang = "H002",
-                    SoLuong = 2,
-                    DonGia = 350000,
-                    TrangThai = true,
-                    MoTa = "Don hop le"
-                },
-                new DuLieuDatHang
-                {
-                    Ma = "CT003",
-                    MaDonHang = "DH002",
-                    MaHang = "H004",
+                    Ma = 2,
+                    MaDonHang = 1,
+                    MaHang = 2,
                     SoLuong = 1,
-                    DonGia = 3200000,
-                    TrangThai = true,
-                    MoTa = "Don hop le"
+                    DonGia = 350000
                 },
                 new DuLieuDatHang
                 {
-                    Ma = "CT004",
-                    MaDonHang = "DH002",
-                    MaHang = "H005",
+                    Ma = 3,
+                    MaDonHang = 2,
+                    MaHang = 4,
+                    SoLuong = 1,
+                    DonGia = 3200000
+                },
+                new DuLieuDatHang
+                {
+                    Ma = 4,
+                    MaDonHang = 2,
+                    MaHang = 5,
                     SoLuong = 2,
-                    DonGia = 2100000,
-                    TrangThai = true,
-                    MoTa = "Don hop le"
+                    DonGia = 2100000
                 },
                 new DuLieuDatHang
                 {
-                    Ma = "CT005",
-                    MaDonHang = "DH003",
-                    MaHang = "H003",
+                    Ma = 5,
+                    MaDonHang = 3,
+                    MaHang = 3,
                     SoLuong = 5,
-                    DonGia = 250000,
-                    TrangThai = false,
-                    MoTa = "Vuot muc ton kho"
+                    DonGia = 250000
+                },
+                new DuLieuDatHang
+                {
+                    Ma = 6,
+                    MaDonHang = 4,
+                    MaHang = 2,
+                    SoLuong = 3,
+                    DonGia = 350000
+                },
+                new DuLieuDatHang
+                {
+                    Ma = 7,
+                    MaDonHang = 5,
+                    MaHang = 1,
+                    SoLuong = 1,
+                    DonGia = 18500000
+                },
+                new DuLieuDatHang
+                {
+                    Ma = 8,
+                    MaDonHang = 5,
+                    MaHang = 5,
+                    SoLuong = 4,
+                    DonGia = 2100000
+                },
+                new DuLieuDatHang
+                {
+                    Ma = 9,
+                    MaDonHang = 6,
+                    MaHang = 3,
+                    SoLuong = 10,
+                    DonGia = 250000
+                },
+                new DuLieuDatHang
+                {
+                    Ma = 10,
+                    MaDonHang = 6,
+                    MaHang = 4,
+                    SoLuong = 2,
+                    DonGia = 3200000
                 }
-                );
+            );
             modelBuilder.Entity<TaiKhoan>().HasData(
                 new TaiKhoan
                 {
@@ -202,21 +264,38 @@ namespace LAVITAapp.Data
             modelBuilder.Entity<HoaDon>().HasData(
                 new HoaDon
                 {
-                    Ma = "HD001",
-                    NgayLap = new DateTime(2026, 7, 10),
-                    TongTien = 37700000,
-                    DaThanhToan = true,
-                    MaDonHang = "DH001",
-                    MaKeToan = "NV004"
+                    MaHoaDon = 1,
+                    MaDonHang = 4,
+                    NgayLap = new DateTime(2026, 7, 20),
+                    DaThuTien = true
                 },
                 new HoaDon
                 {
-                    Ma = "HD002",
-                    NgayLap = new DateTime(2026, 7, 11),
-                    TongTien = 7400000,
-                    DaThanhToan = false,
-                    MaDonHang = "DH002",
-                    MaKeToan = "NV004"
+                    MaHoaDon = 2,
+                    MaDonHang = 3,
+                    NgayLap = new DateTime(2026, 7, 21),
+                    DaThuTien = false
+                },
+                new HoaDon
+                {
+                    MaHoaDon = 3,
+                    MaDonHang = 5,
+                    NgayLap = new DateTime(2026, 7, 22),
+                    DaThuTien = true
+                },
+                new HoaDon
+                {
+                    MaHoaDon = 4,
+                    MaDonHang = 1,
+                    NgayLap = new DateTime(2026, 7, 22),
+                    DaThuTien = false
+                },
+                new HoaDon
+                {
+                    MaHoaDon = 5,
+                    MaDonHang = 2,
+                    NgayLap = new DateTime(2026, 7, 23),
+                    DaThuTien = true
                 }
             );
             modelBuilder.Entity<ToKhaiKienHang>().HasData(

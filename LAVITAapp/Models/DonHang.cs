@@ -20,7 +20,7 @@ namespace LAVITAapp.Models
         public DateTime NgayGiao { get; set; }
         [ForeignKey("KhachHang")]
         [DisplayName("Mã Khách Hàng")]
-        public string MaKhach { get; set; }
+        public int MaKhach { get; set; }
         [DisplayName("Trạng Thái")]
         public string TrangThai { get; set; }
         [DisplayName("Mô Tả")]

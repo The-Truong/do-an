@@ -126,7 +126,7 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Tahoma", 15F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.Teal;
-            guna2HtmlLabel1.Location = new Point(23, 12);
+            guna2HtmlLabel1.Location = new Point(23, 17);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(95, 32);
             guna2HtmlLabel1.TabIndex = 0;
@@ -260,6 +260,7 @@
             btnhstk.Text = "Hồ Sơ Tồn Kho";
             btnhstk.TextAlign = HorizontalAlignment.Left;
             btnhstk.UseTransparentBackground = true;
+            btnhstk.Click += btnhstk_Click;
             // 
             // btnkiemduyet
             // 

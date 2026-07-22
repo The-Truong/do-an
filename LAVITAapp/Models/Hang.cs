@@ -12,11 +12,9 @@ namespace LAVITAapp.Models
     {
         [Key]
         [DisplayName("Mã Hàng")]
-        public string Ma { get; set; }
+        public int Ma { get; set; }
         [DisplayName("Tên Hàng")]
         public string TenHang { get; set; }
-        [DisplayName("Mô Tả")]
-        public string? MoTa { get; set; }
         [DisplayName("Loại Hàng")]
         public string? LoaiHang { get; set; }
         [DisplayName("Số Lượng Tồn")]

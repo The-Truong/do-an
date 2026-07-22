@@ -1,4 +1,5 @@
 ﻿using LAVITAapp.Models;
+using LAVITAapp.View.QuanLyHangTonKho;
 using LAVITAapp.View.QuanLyKhachHang;
 using LAVITAapp.View.QuanLyTaiKhoan;
 using LAVITAapp.View.ThongTin;
@@ -29,7 +30,7 @@ namespace LAVITAapp.View
             InitializeComponent();
             tk = _tk;
             //quản lý tài khoản
-            if (!tk.Quyen.Equals("Admin"))
+            if (!tk.Quyen.Equals("admin"))
             {
                 btnqltk.Visible = false;
             }
@@ -60,6 +61,11 @@ namespace LAVITAapp.View
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void btnhstk_Click(object sender, EventArgs e)
+        {
+            ShowUserControl(new UC_HangTonKho());
         }
     }
 }
